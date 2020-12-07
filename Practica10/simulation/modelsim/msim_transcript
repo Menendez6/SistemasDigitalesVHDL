@@ -1,0 +1,87 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica10_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Practica10
+# -- Compiling architecture structural of Practica10
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DetectorFlanco
+# -- Compiling architecture behavioral of DetectorFlanco
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlAparcamiento
+# -- Compiling architecture behavioral of ControlAparcamiento
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DetectorFlancoSubida
+# -- Compiling architecture behavioral of DetectorFlancoSubida
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BinA7Seg
+# -- Compiling architecture behavioral of BinA7Seg
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlAparcamiento_vhd_tst
+# -- Compiling architecture ControlAparcamiento_arch of ControlAparcamiento_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  ControlAparcamiento_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ControlAparcamiento_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.controlaparcamiento_vhd_tst(controlaparcamiento_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.controlaparcamiento(behavioral)
+# Loading work.detectorflancosubida(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Failure: Fin de la simulacion
+#    Time: 14760 ns  Iteration: 0  Process: /controlaparcamiento_vhd_tst/always File: C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht
+# Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 83
+# Simulation Breakpoint: Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 83
+# MACRO ./Practica10_run_msim_rtl_vhdl.do PAUSED at line 21

@@ -1,0 +1,178 @@
+|Practica5
+a[0] => Sumador5Bits:i1.a[0]
+a[1] => Sumador5Bits:i1.a[1]
+a[2] => Sumador5Bits:i1.a[2]
+a[3] => Sumador5Bits:i1.a[3]
+a[4] => Sumador5Bits:i1.a[4]
+b[0] => Sumador5Bits:i1.b[0]
+b[1] => Sumador5Bits:i1.b[1]
+b[2] => Sumador5Bits:i1.b[2]
+b[3] => Sumador5Bits:i1.b[3]
+b[4] => Sumador5Bits:i1.b[4]
+c_out <= Sumador5Bits:i1.c_out
+salida1[0] <= BinA7Seg:i2.salida[0]
+salida1[1] <= BinA7Seg:i2.salida[1]
+salida1[2] <= BinA7Seg:i2.salida[2]
+salida1[3] <= BinA7Seg:i2.salida[3]
+salida1[4] <= BinA7Seg:i2.salida[4]
+salida1[5] <= BinA7Seg:i2.salida[5]
+salida1[6] <= BinA7Seg:i2.salida[6]
+salida2[0] <= BinA7Seg:i3.salida[0]
+salida2[1] <= BinA7Seg:i3.salida[1]
+salida2[2] <= BinA7Seg:i3.salida[2]
+salida2[3] <= BinA7Seg:i3.salida[3]
+salida2[4] <= BinA7Seg:i3.salida[4]
+salida2[5] <= BinA7Seg:i3.salida[5]
+salida2[6] <= BinA7Seg:i3.salida[6]
+
+
+|Practica5|Sumador5Bits:i1
+a[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.a_i
+a[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.a_i
+a[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.a_i
+a[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.a_i
+a[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.a_i
+b[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.b_i
+b[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.b_i
+b[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.b_i
+b[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.b_i
+b[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.b_i
+s[0] <= Sumador1Bit:GenSum:0:i_Sumador1Bit.s_i
+s[1] <= Sumador1Bit:GenSum:1:i_Sumador1Bit.s_i
+s[2] <= Sumador1Bit:GenSum:2:i_Sumador1Bit.s_i
+s[3] <= Sumador1Bit:GenSum:3:i_Sumador1Bit.s_i
+s[4] <= Sumador1Bit:GenSum:4:i_Sumador1Bit.s_i
+c_out <= Sumador1Bit:GenSum:4:i_Sumador1Bit.c_i_mas_1
+
+
+|Practica5|Sumador5Bits:i1|Sumador1Bit:\GenSum:0:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|Sumador5Bits:i1|Sumador1Bit:\GenSum:1:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|Sumador5Bits:i1|Sumador1Bit:\GenSum:2:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|Sumador5Bits:i1|Sumador1Bit:\GenSum:3:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|Sumador5Bits:i1|Sumador1Bit:\GenSum:4:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|BinA7Seg:i2
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica5|BinA7Seg:i3
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

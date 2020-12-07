@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164. all;
+
+entity Mux_salida is
+	port(
+	e1,e2,e3 	: in std_logic_vector(4 downto 0);
+	sel_s			: in std_logic_vector(1 downto 0);
+	s				: out std_logic_vector(4 downto 0)
+	)
+end Mux_salida	
+
+architecture behavioral of Mux_salida is
+begin
+with sel_s select
+	s <=
+	e1 when "00",
+	e2 when "01",
+	e3 when "10"
+	"00000" when others;
+end behavioral

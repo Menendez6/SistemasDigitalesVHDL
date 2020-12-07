@@ -1,0 +1,41 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica5_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Practica5.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Practica5
+# -- Compiling architecture structure of Practica5
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica5/simulation/modelsim/Sumador5Bits.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Sumador5Bits_vhd_tst
+# -- Compiling architecture Sumador5Bits_arch of Sumador5Bits_vhd_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=Practica5_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  Sumador5Bits
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica5_vhd.sdo -t 1ps Sumador5Bits 
+# ** Error: (vsim-3170) Could not find 'C:/altera/13.0sp1/SistemasI/Practica5/simulation/modelsim/gate_work.Sumador5Bits'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Practica5_run_msim_gate_vhdl.do PAUSED at line 12

@@ -1,0 +1,123 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica7_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador1Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sumador1Bit
+# -- Compiling architecture behavioral of Sumador1Bit
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador_Restador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sumador_Restador
+# -- Compiling architecture structural of Sumador_Restador
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_Logica.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Unidad_Logica
+# -- Compiling architecture behavioral of Unidad_Logica
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_B.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux_B
+# -- Compiling architecture behavioral of Mux_B
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_ov.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux_ov
+# -- Compiling architecture behavioral of Mux_ov
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_salida.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux_salida
+# -- Compiling architecture behavioral of Mux_salida
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Unidad_Control
+# -- Compiling architecture behavioral of Unidad_Control
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/BinA7Seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BinA7Seg
+# -- Compiling architecture behavioral of BinA7Seg
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Practica7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Practica7
+# -- Compiling architecture structural of Practica7
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/alu5bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU5Bits
+# -- Compiling architecture structural of ALU5Bits
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/multiplicador5bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Multiplicador5Bits
+# -- Compiling architecture behavioral of Multiplicador5Bits
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica7/Practica7/simulation/modelsim/ALU5Bits.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU5Bits_vhd_tst
+# -- Compiling architecture ALU5Bits_arch of ALU5Bits_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  ALU5Bits_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ALU5Bits_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu5bits_vhd_tst(alu5bits_arch)
+# Loading work.alu5bits(structural)
+# Loading work.unidad_control(behavioral)
+# Loading work.unidad_logica(behavioral)
+# Loading work.multiplicador5bits(behavioral)
+# Loading work.mux_b(behavioral)
+# Loading work.sumador_restador(structural)
+# Loading work.sumador1bit(behavioral)
+# Loading work.mux_salida(behavioral)
+# Loading work.mux_ov(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all

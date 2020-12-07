@@ -1,0 +1,224 @@
+|Practica10
+p1 => DetectorFlanco:i1_DetectorFlanco.e
+p2 => DetectorFlanco:i2_DetectorFlanco.e
+reset_n => DetectorFlanco:i1_DetectorFlanco.reset_n
+reset_n => DetectorFlanco:i2_DetectorFlanco.reset_n
+reset_n => ControlAparcamiento:i_ControlAparcamiento.reset_n
+clk => DetectorFlanco:i1_DetectorFlanco.clk
+clk => DetectorFlanco:i2_DetectorFlanco.clk
+clk => ControlAparcamiento:i_ControlAparcamiento.clk
+max_coches[0] => ControlAparcamiento:i_ControlAparcamiento.max_coches[0]
+max_coches[1] => ControlAparcamiento:i_ControlAparcamiento.max_coches[1]
+max_coches[2] => ControlAparcamiento:i_ControlAparcamiento.max_coches[2]
+max_coches[3] => ControlAparcamiento:i_ControlAparcamiento.max_coches[3]
+max_coches[4] => ControlAparcamiento:i_ControlAparcamiento.max_coches[4]
+max_coches[5] => ControlAparcamiento:i_ControlAparcamiento.max_coches[5]
+max_coches[6] => ControlAparcamiento:i_ControlAparcamiento.max_coches[6]
+max_coches[7] => ControlAparcamiento:i_ControlAparcamiento.max_coches[7]
+libre <= ControlAparcamiento:i_ControlAparcamiento.libre
+ocupado <= ControlAparcamiento:i_ControlAparcamiento.ocupado
+salida1[0] <= BinA7Seg:i1_BinA7Seg.salida[0]
+salida1[1] <= BinA7Seg:i1_BinA7Seg.salida[1]
+salida1[2] <= BinA7Seg:i1_BinA7Seg.salida[2]
+salida1[3] <= BinA7Seg:i1_BinA7Seg.salida[3]
+salida1[4] <= BinA7Seg:i1_BinA7Seg.salida[4]
+salida1[5] <= BinA7Seg:i1_BinA7Seg.salida[5]
+salida1[6] <= BinA7Seg:i1_BinA7Seg.salida[6]
+salida2[0] <= BinA7Seg:i2_BinA7Seg.salida[0]
+salida2[1] <= BinA7Seg:i2_BinA7Seg.salida[1]
+salida2[2] <= BinA7Seg:i2_BinA7Seg.salida[2]
+salida2[3] <= BinA7Seg:i2_BinA7Seg.salida[3]
+salida2[4] <= BinA7Seg:i2_BinA7Seg.salida[4]
+salida2[5] <= BinA7Seg:i2_BinA7Seg.salida[5]
+salida2[6] <= BinA7Seg:i2_BinA7Seg.salida[6]
+
+
+|Practica10|DetectorFlanco:i1_DetectorFlanco
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector0.IN2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector2.IN0
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|DetectorFlanco:i2_DetectorFlanco
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector0.IN2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector2.IN0
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|ControlAparcamiento:i_ControlAparcamiento
+max_coches[0] => LessThan0.IN8
+max_coches[0] => Equal1.IN7
+max_coches[1] => LessThan0.IN7
+max_coches[1] => Equal1.IN6
+max_coches[2] => LessThan0.IN6
+max_coches[2] => Equal1.IN5
+max_coches[3] => LessThan0.IN5
+max_coches[3] => Equal1.IN4
+max_coches[4] => LessThan0.IN4
+max_coches[4] => Equal1.IN3
+max_coches[5] => LessThan0.IN3
+max_coches[5] => Equal1.IN2
+max_coches[6] => LessThan0.IN2
+max_coches[6] => Equal1.IN1
+max_coches[7] => LessThan0.IN1
+max_coches[7] => Equal1.IN0
+clk => DetectorFlancoSubida:i1_DetectorFlanco.clk
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => DetectorFlancoSubida:i2_DetectorFlanco.clk
+reset_n => DetectorFlancoSubida:i1_DetectorFlanco.reset_n
+reset_n => DetectorFlancoSubida:i2_DetectorFlanco.reset_n
+reset_n => contador[0].ACLR
+reset_n => contador[1].ACLR
+reset_n => contador[2].ACLR
+reset_n => contador[3].ACLR
+reset_n => contador[4].ACLR
+reset_n => contador[5].ACLR
+reset_n => contador[6].ACLR
+reset_n => contador[7].ACLR
+entra_coche => DetectorFlancoSubida:i1_DetectorFlanco.e
+sale_coche => DetectorFlancoSubida:i2_DetectorFlanco.e
+num_coches[0] <= contador[0].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[1] <= contador[1].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[2] <= contador[2].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[4] <= contador[4].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[5] <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[6] <= contador[6].DB_MAX_OUTPUT_PORT_TYPE
+num_coches[7] <= contador[7].DB_MAX_OUTPUT_PORT_TYPE
+libre <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+ocupado <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i1_DetectorFlanco
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i2_DetectorFlanco
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|BinA7Seg:i1_BinA7Seg
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica10|BinA7Seg:i2_BinA7Seg
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

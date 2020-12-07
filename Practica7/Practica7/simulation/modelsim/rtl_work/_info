@@ -1,0 +1,429 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\SistemasI\Practica7\Practica7\simulation\modelsim
+Ealu5bits
+Z1 w1605174076
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\13.0sp1\SistemasI\Practica7\Practica7\simulation\modelsim
+Z5 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/alu5bits.vhd
+Z6 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/alu5bits.vhd
+l0
+L4
+V^@gED5F?2WNQ3c`_G2oha3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1605558153.162000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/alu5bits.vhd|
+Z10 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/alu5bits.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 QL>71EXFfZ<ZY`CiGknEB3
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 8 alu5bits 0 22 ^@gED5F?2WNQ3c`_G2oha3
+l78
+L13
+VonlF:FnlXIgGQ1Ne66oM61
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ebA45eEaeMUMbDNj2VD3V0
+!i10b 1
+Ealu5bits_vhd_tst
+Z13 w1605174339
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/simulation/modelsim/ALU5Bits.vht
+Z16 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/simulation/modelsim/ALU5Bits.vht
+l0
+L4
+VQ=H4g2l>ZXMa9`=Zl>NQf2
+!s100 a59m`Z9:V1>bCcS97f[j52
+R7
+31
+!i10b 1
+Z17 !s108 1605558153.439000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/simulation/modelsim/ALU5Bits.vht|
+Z19 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/simulation/modelsim/ALU5Bits.vht|
+R11
+R12
+Aalu5bits_arch
+R14
+R2
+R3
+DEx4 work 16 alu5bits_vhd_tst 0 22 Q=H4g2l>ZXMa9`=Zl>NQf2
+l22
+L6
+VQ1k:HV@9`0Lf7h5^L]]KJ2
+!s100 iAhK<f3]jKWAkP=D6jVhz2
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12
+Ebina7seg
+Z20 w1605169819
+R2
+R3
+R4
+Z21 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/BinA7Seg.vhd
+Z22 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/BinA7Seg.vhd
+l0
+L4
+V72zBPDk3BVXe@S[W8FMFn1
+R7
+31
+Z23 !s108 1605558152.888000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/BinA7Seg.vhd|
+Z25 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/BinA7Seg.vhd|
+R11
+R12
+!s100 ndT9gDLTBc2lWlTiCUfR;0
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 8 bina7seg 0 22 72zBPDk3BVXe@S[W8FMFn1
+l13
+L11
+VYE@NI:i@mL4OjjNIDSfi51
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 3A6jilSJi0B_X<?;MQOGf0
+!i10b 1
+Emultiplicador5bits
+Z26 w1605173726
+R14
+R2
+R3
+R4
+Z27 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/multiplicador5bits.vhd
+Z28 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/multiplicador5bits.vhd
+l0
+L5
+V?N96icmQQ_5@7mDAEJjXc3
+R7
+31
+Z29 !s108 1605558153.302000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/multiplicador5bits.vhd|
+Z31 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/multiplicador5bits.vhd|
+R11
+R12
+!s100 ePk0JjXnR`c>7b<97_ghA2
+!i10b 1
+Abehavioral
+R14
+R2
+R3
+DEx4 work 18 multiplicador5bits 0 22 ?N96icmQQ_5@7mDAEJjXc3
+l17
+L13
+V9i@lKfI6NZDM6m]X:ZQ2R0
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 4Q0bcLCeT:N7Q@Tc1UT[10
+!i10b 1
+Emux_b
+Z32 w1605167077
+R2
+R3
+R4
+Z33 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_B.vhd
+Z34 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_B.vhd
+l0
+L4
+VRfX:]LfM?;c_8JACT6KMU2
+R7
+31
+Z35 !s108 1605558152.341000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_B.vhd|
+Z37 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_B.vhd|
+R11
+R12
+!s100 ;>MVM=j0^PQ?U8M80a_Gg2
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 5 mux_b 0 22 RfX:]LfM?;c_8JACT6KMU2
+l13
+L12
+VJTc_=P2lSo<UmeA:QQK=d0
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 `fK?7<h537l3_2JnHXKh>0
+!i10b 1
+Emux_ov
+Z38 w1605167079
+R2
+R3
+R4
+Z39 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_ov.vhd
+Z40 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_ov.vhd
+l0
+L4
+V_3afhZ@H]bT7^n3jD:P8R0
+R7
+31
+Z41 !s108 1605558152.466000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_ov.vhd|
+Z43 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_ov.vhd|
+R11
+R12
+!s100 fTWicOzZ8m7[K>@KK=XnQ0
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 6 mux_ov 0 22 _3afhZ@H]bT7^n3jD:P8R0
+l13
+L12
+VM7U:U_<n[fBz7G08i_d4Z0
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 RO2[DXoDBVYfZdK?KSWdN1
+!i10b 1
+Emux_salida
+Z44 w1605167548
+R2
+R3
+R4
+Z45 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_salida.vhd
+Z46 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_salida.vhd
+l0
+L4
+VT7QE5?Z@L?<b[88c?AI5S2
+R7
+31
+Z47 !s108 1605558152.611000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_salida.vhd|
+Z49 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Mux_salida.vhd|
+R11
+R12
+!s100 ^6i]IC4F^=Ka0K1b[?iUG2
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 10 mux_salida 0 22 T7QE5?Z@L?<b[88c?AI5S2
+l13
+L12
+V4G]E7ZR9n^3``AO6`j2>P1
+R7
+31
+R47
+R48
+R49
+R11
+R12
+!s100 92f?7KAN?CHTb]k0LMUnY2
+!i10b 1
+Epractica7
+R1
+R2
+R3
+R4
+Z50 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Practica7.vhd
+Z51 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Practica7.vhd
+l0
+L4
+V>J]d7?]<ZTbz;Si0[Hd]f3
+R7
+31
+Z52 !s108 1605558153.022000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Practica7.vhd|
+Z54 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Practica7.vhd|
+R11
+R12
+!s100 BC<jjmOPI:oRk]f39FS?D3
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 9 practica7 0 22 >J]d7?]<ZTbz;Si0[Hd]f3
+l33
+L13
+V72WcN4bGiJ5_85KgWnz5^3
+R7
+31
+R52
+R53
+R54
+R11
+R12
+!s100 Tbh2CK6VI4NGAmmm]??:31
+!i10b 1
+Esumador1bit
+Z55 w1605115770
+R2
+R3
+R4
+Z56 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador1Bit.vhd
+Z57 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador1Bit.vhd
+l0
+L4
+V:[AkIJMJ0@HWUC^=H6;U72
+R7
+31
+Z58 !s108 1605558151.596000
+Z59 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador1Bit.vhd|
+Z60 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador1Bit.vhd|
+R11
+R12
+!s100 K5_27jVUO>LCCMkb@n70[0
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 11 sumador1bit 0 22 :[AkIJMJ0@HWUC^=H6;U72
+l16
+L15
+V@Y_V0ME[9z`GDIU4?UaVj3
+R7
+31
+R58
+R59
+R60
+R11
+R12
+!s100 GzJoGfICJQP4CRjhEQMD62
+!i10b 1
+Esumador_restador
+Z61 w1605557972
+R2
+R3
+R4
+Z62 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador_Restador.vhd
+Z63 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador_Restador.vhd
+l0
+L4
+V9fb4Y9dfm9BFDIn31P7;m0
+R7
+31
+Z64 !s108 1605558151.745000
+Z65 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador_Restador.vhd|
+Z66 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Sumador_Restador.vhd|
+R11
+R12
+!s100 fE0PD`FQ82f^eLS]II;a13
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 16 sumador_restador 0 22 9fb4Y9dfm9BFDIn31P7;m0
+l24
+L12
+V`1Yd8DEAzf]QFXBZ2@4_I1
+R7
+31
+R64
+R65
+R66
+R11
+R12
+!s100 WOk8XImT;`>Tk@:a5anzE3
+!i10b 1
+Eunidad_control
+Z67 w1605166913
+R2
+R3
+R4
+Z68 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_control.vhd
+Z69 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_control.vhd
+l0
+L4
+VZTP^dQgjK8jUiNW^RT?>D0
+R7
+31
+Z70 !s108 1605558152.750000
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_control.vhd|
+Z72 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_control.vhd|
+R11
+R12
+!s100 Ko][CzG4SO_]BdH<YbOI10
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 14 unidad_control 0 22 ZTP^dQgjK8jUiNW^RT?>D0
+l17
+L15
+VPBV^e`0@NmK4DzHJALW702
+R7
+31
+R70
+R71
+R72
+R11
+R12
+!s100 2`=UjK6eg_;2enT^aOTEZ1
+!i10b 1
+Eunidad_logica
+Z73 w1605167032
+R2
+R3
+R4
+Z74 8C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_Logica.vhd
+Z75 FC:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_Logica.vhd
+l0
+L4
+VnCmZ]iXdBBYVeePAfX=ND3
+R7
+31
+Z76 !s108 1605558152.192000
+Z77 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_Logica.vhd|
+Z78 !s107 C:/altera/13.0sp1/SistemasI/Practica7/Practica7/Unidad_Logica.vhd|
+R11
+R12
+!s100 :kMB@[K;`0:eME?Qm2S183
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 13 unidad_logica 0 22 nCmZ]iXdBBYVeePAfX=ND3
+l13
+L12
+V=^jg7UnlQM;Z;ND9=nZjY1
+R7
+31
+R76
+R77
+R78
+R11
+R12
+!s100 cXhS?]k2JcE?T4;VcEQM62
+!i10b 1

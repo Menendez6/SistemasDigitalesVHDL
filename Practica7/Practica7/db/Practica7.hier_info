@@ -1,0 +1,423 @@
+|Practica7
+a[0] => ALU5Bits:i_alu.a[0]
+a[1] => ALU5Bits:i_alu.a[1]
+a[2] => ALU5Bits:i_alu.a[2]
+a[3] => ALU5Bits:i_alu.a[3]
+a[4] => ALU5Bits:i_alu.a[4]
+b[0] => ALU5Bits:i_alu.b[0]
+b[1] => ALU5Bits:i_alu.b[1]
+b[2] => ALU5Bits:i_alu.b[2]
+b[3] => ALU5Bits:i_alu.b[3]
+b[4] => ALU5Bits:i_alu.b[4]
+sel[0] => ALU5Bits:i_alu.sel[0]
+sel[1] => ALU5Bits:i_alu.sel[1]
+sel[2] => ALU5Bits:i_alu.sel[2]
+ov <= ALU5Bits:i_alu.ov
+s1[0] <= BinA7Seg:i1_BinA7.salida[0]
+s1[1] <= BinA7Seg:i1_BinA7.salida[1]
+s1[2] <= BinA7Seg:i1_BinA7.salida[2]
+s1[3] <= BinA7Seg:i1_BinA7.salida[3]
+s1[4] <= BinA7Seg:i1_BinA7.salida[4]
+s1[5] <= BinA7Seg:i1_BinA7.salida[5]
+s1[6] <= BinA7Seg:i1_BinA7.salida[6]
+s2[0] <= BinA7Seg:i2_BinA7.salida[0]
+s2[1] <= BinA7Seg:i2_BinA7.salida[1]
+s2[2] <= BinA7Seg:i2_BinA7.salida[2]
+s2[3] <= BinA7Seg:i2_BinA7.salida[3]
+s2[4] <= BinA7Seg:i2_BinA7.salida[4]
+s2[5] <= BinA7Seg:i2_BinA7.salida[5]
+s2[6] <= BinA7Seg:i2_BinA7.salida[6]
+
+
+|Practica7|ALU5Bits:i_alu
+a[0] => Unidad_Logica:Logica.a[0]
+a[0] => Multiplicador5Bits:Multiplicador.a[0]
+a[0] => Sumador_Restador:i_sum_rest.a[0]
+a[1] => Unidad_Logica:Logica.a[1]
+a[1] => Multiplicador5Bits:Multiplicador.a[1]
+a[1] => Sumador_Restador:i_sum_rest.a[1]
+a[2] => Unidad_Logica:Logica.a[2]
+a[2] => Multiplicador5Bits:Multiplicador.a[2]
+a[2] => Sumador_Restador:i_sum_rest.a[2]
+a[3] => Unidad_Logica:Logica.a[3]
+a[3] => Multiplicador5Bits:Multiplicador.a[3]
+a[3] => Sumador_Restador:i_sum_rest.a[3]
+a[4] => Unidad_Logica:Logica.a[4]
+a[4] => Multiplicador5Bits:Multiplicador.a[4]
+a[4] => Sumador_Restador:i_sum_rest.a[4]
+b[0] => Unidad_Logica:Logica.b[0]
+b[0] => Multiplicador5Bits:Multiplicador.b[0]
+b[0] => Mux_B:i_Mux_B.b[0]
+b[1] => Unidad_Logica:Logica.b[1]
+b[1] => Multiplicador5Bits:Multiplicador.b[1]
+b[1] => Mux_B:i_Mux_B.b[1]
+b[2] => Unidad_Logica:Logica.b[2]
+b[2] => Multiplicador5Bits:Multiplicador.b[2]
+b[2] => Mux_B:i_Mux_B.b[2]
+b[3] => Unidad_Logica:Logica.b[3]
+b[3] => Multiplicador5Bits:Multiplicador.b[3]
+b[3] => Mux_B:i_Mux_B.b[3]
+b[4] => Unidad_Logica:Logica.b[4]
+b[4] => Multiplicador5Bits:Multiplicador.b[4]
+b[4] => Mux_B:i_Mux_B.b[4]
+sel[0] => Unidad_control:Control.sel[0]
+sel[1] => Unidad_control:Control.sel[1]
+sel[2] => Unidad_control:Control.sel[2]
+ov <= Mux_ov:i_overflow.ov
+s[0] <= Mux_salida:i_salida.s[0]
+s[1] <= Mux_salida:i_salida.s[1]
+s[2] <= Mux_salida:i_salida.s[2]
+s[3] <= Mux_salida:i_salida.s[3]
+s[4] <= Mux_salida:i_salida.s[4]
+
+
+|Practica7|ALU5Bits:i_alu|Unidad_Control:Control
+sel[0] => Mux0.IN10
+sel[0] => Mux1.IN10
+sel[0] => Mux2.IN5
+sel[0] => s_r.DATAIN
+sel[0] => sel_log[0].DATAIN
+sel[1] => Mux0.IN9
+sel[1] => Mux1.IN9
+sel[1] => Mux2.IN4
+sel[1] => sel_b.DATAIN
+sel[1] => sel_log[1].DATAIN
+sel[2] => Mux0.IN8
+sel[2] => Mux1.IN8
+sel_s[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sel_s[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+sel_ov <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s_r <= sel[0].DB_MAX_OUTPUT_PORT_TYPE
+sel_b <= sel[1].DB_MAX_OUTPUT_PORT_TYPE
+sel_log[0] <= sel[0].DB_MAX_OUTPUT_PORT_TYPE
+sel_log[1] <= sel[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Unidad_Logica:Logica
+a[0] => s.IN0
+a[0] => s.IN0
+a[0] => s.IN0
+a[0] => Mux0.IN3
+a[1] => s.IN0
+a[1] => s.IN0
+a[1] => s.IN0
+a[1] => Mux1.IN3
+a[2] => s.IN0
+a[2] => s.IN0
+a[2] => s.IN0
+a[2] => Mux2.IN3
+a[3] => s.IN0
+a[3] => s.IN0
+a[3] => s.IN0
+a[3] => Mux3.IN3
+a[4] => s.IN0
+a[4] => s.IN0
+a[4] => s.IN0
+a[4] => Mux4.IN3
+b[0] => s.IN1
+b[0] => s.IN1
+b[0] => s.IN1
+b[1] => s.IN1
+b[1] => s.IN1
+b[1] => s.IN1
+b[2] => s.IN1
+b[2] => s.IN1
+b[2] => s.IN1
+b[3] => s.IN1
+b[3] => s.IN1
+b[3] => s.IN1
+b[4] => s.IN1
+b[4] => s.IN1
+b[4] => s.IN1
+sel_log[0] => Mux0.IN5
+sel_log[0] => Mux1.IN5
+sel_log[0] => Mux2.IN5
+sel_log[0] => Mux3.IN5
+sel_log[0] => Mux4.IN5
+sel_log[1] => Mux0.IN4
+sel_log[1] => Mux1.IN4
+sel_log[1] => Mux2.IN4
+sel_log[1] => Mux3.IN4
+sel_log[1] => Mux4.IN4
+s[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Multiplicador5Bits:Multiplicador
+a[0] => pp[0][0].IN0
+a[0] => pp[1][1].IN0
+a[0] => pp[2][2].IN0
+a[0] => pp[3][3].IN0
+a[0] => pp[4][4].IN0
+a[1] => pp[0][1].IN0
+a[1] => pp[1][2].IN0
+a[1] => pp[2][3].IN0
+a[1] => pp[3][4].IN0
+a[1] => pp[4][5].IN0
+a[2] => pp[0][2].IN0
+a[2] => pp[1][3].IN0
+a[2] => pp[2][4].IN0
+a[2] => pp[3][5].IN0
+a[2] => pp[4][6].IN0
+a[3] => pp[0][3].IN0
+a[3] => pp[1][4].IN0
+a[3] => pp[2][5].IN0
+a[3] => pp[3][6].IN0
+a[3] => pp[4][7].IN0
+a[4] => pp[0][4].IN0
+a[4] => pp[1][5].IN0
+a[4] => pp[2][6].IN0
+a[4] => pp[3][7].IN0
+a[4] => pp[4][8].IN0
+b[0] => pp[0][0].IN1
+b[0] => pp[0][1].IN1
+b[0] => pp[0][2].IN1
+b[0] => pp[0][3].IN1
+b[0] => pp[0][4].IN1
+b[1] => pp[1][1].IN1
+b[1] => pp[1][2].IN1
+b[1] => pp[1][3].IN1
+b[1] => pp[1][4].IN1
+b[1] => pp[1][5].IN1
+b[2] => pp[2][2].IN1
+b[2] => pp[2][3].IN1
+b[2] => pp[2][4].IN1
+b[2] => pp[2][5].IN1
+b[2] => pp[2][6].IN1
+b[3] => pp[3][3].IN1
+b[3] => pp[3][4].IN1
+b[3] => pp[3][5].IN1
+b[3] => pp[3][6].IN1
+b[3] => pp[3][7].IN1
+b[4] => pp[4][4].IN1
+b[4] => pp[4][5].IN1
+b[4] => pp[4][6].IN1
+b[4] => pp[4][7].IN1
+b[4] => pp[4][8].IN1
+p[0] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+p[4] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+ov_p <= ov_p.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Mux_B:i_Mux_B
+b[0] => Selector0.IN4
+b[1] => s.DATAB
+b[2] => s.DATAB
+b[3] => s.DATAB
+b[4] => s.DATAB
+sel_b => Selector0.IN5
+sel_b => s.OUTPUTSELECT
+sel_b => s.OUTPUTSELECT
+sel_b => s.OUTPUTSELECT
+sel_b => s.OUTPUTSELECT
+sel_b => Selector0.IN2
+s[0] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest
+a[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.a_i
+a[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.a_i
+a[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.a_i
+a[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.a_i
+a[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.a_i
+b[0] => b_aux[0].IN0
+b[1] => b_aux[1].IN0
+b[2] => b_aux[2].IN0
+b[3] => b_aux[3].IN0
+b[4] => b_aux[4].IN0
+s[0] <= Sumador1Bit:GenSum:0:i_Sumador1Bit.s_i
+s[1] <= Sumador1Bit:GenSum:1:i_Sumador1Bit.s_i
+s[2] <= Sumador1Bit:GenSum:2:i_Sumador1Bit.s_i
+s[3] <= Sumador1Bit:GenSum:3:i_Sumador1Bit.s_i
+s[4] <= Sumador1Bit:GenSum:4:i_Sumador1Bit.s_i
+s_r => b_aux[0].IN1
+s_r => b_aux[1].IN1
+s_r => b_aux[2].IN1
+s_r => b_aux[3].IN1
+s_r => b_aux[4].IN1
+s_r => Sumador1Bit:GenSum:0:i_Sumador1Bit.c_i
+ov <= ov.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest|Sumador1Bit:\GenSum:0:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest|Sumador1Bit:\GenSum:1:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest|Sumador1Bit:\GenSum:2:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest|Sumador1Bit:\GenSum:3:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Sumador_Restador:i_sum_rest|Sumador1Bit:\GenSum:4:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Mux_salida:i_salida
+e1[0] => Mux4.IN1
+e1[1] => Mux3.IN1
+e1[2] => Mux2.IN1
+e1[3] => Mux1.IN1
+e1[4] => Mux0.IN1
+e2[0] => Mux4.IN2
+e2[1] => Mux3.IN2
+e2[2] => Mux2.IN2
+e2[3] => Mux1.IN2
+e2[4] => Mux0.IN2
+e3[0] => Mux4.IN3
+e3[1] => Mux3.IN3
+e3[2] => Mux2.IN3
+e3[3] => Mux1.IN3
+e3[4] => Mux0.IN3
+sel_s[0] => Mux0.IN5
+sel_s[0] => Mux1.IN5
+sel_s[0] => Mux2.IN5
+sel_s[0] => Mux3.IN5
+sel_s[0] => Mux4.IN5
+sel_s[1] => Mux0.IN4
+sel_s[1] => Mux1.IN4
+sel_s[1] => Mux2.IN4
+sel_s[1] => Mux3.IN4
+sel_s[1] => Mux4.IN4
+s[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|ALU5Bits:i_alu|Mux_ov:i_overflow
+ov_m => Selector0.IN3
+ov_sr => Selector0.IN4
+sel_ov => Selector0.IN5
+sel_ov => Selector0.IN1
+ov <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|BinA7Seg:i1_BinA7
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica7|BinA7Seg:i2_BinA7
+E[0] => Mux0.IN19
+E[0] => Mux1.IN19
+E[0] => Mux2.IN19
+E[0] => Mux3.IN19
+E[0] => Mux4.IN19
+E[0] => Mux5.IN19
+E[0] => Mux6.IN19
+E[1] => Mux0.IN18
+E[1] => Mux1.IN18
+E[1] => Mux2.IN18
+E[1] => Mux3.IN18
+E[1] => Mux4.IN18
+E[1] => Mux5.IN18
+E[1] => Mux6.IN18
+E[2] => Mux0.IN17
+E[2] => Mux1.IN17
+E[2] => Mux2.IN17
+E[2] => Mux3.IN17
+E[2] => Mux4.IN17
+E[2] => Mux5.IN17
+E[2] => Mux6.IN17
+E[3] => Mux0.IN16
+E[3] => Mux1.IN16
+E[3] => Mux2.IN16
+E[3] => Mux3.IN16
+E[3] => Mux4.IN16
+E[3] => Mux5.IN16
+E[3] => Mux6.IN16
+salida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

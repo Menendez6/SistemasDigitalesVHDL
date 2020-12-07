@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/SistemasI/Practica2y3/Comparador.bdf
+source_file = 1, C:/altera/13.0sp1/SistemasI/Practica2y3/Pract2.bdf
+source_file = 1, C:/altera/13.0sp1/SistemasI/Practica2y3/db/Pract2.cbx.xml
+design_name = Pract2
+instance = comp, \A1~I\, A1, Pract2, 1
+instance = comp, \B1~I\, B1, Pract2, 1
+instance = comp, \A0~I\, A0, Pract2, 1
+instance = comp, \B0~I\, B0, Pract2, 1
+instance = comp, \inst|inst8~0\, inst|inst8~0, Pract2, 1
+instance = comp, \inst1|inst8~0\, inst1|inst8~0, Pract2, 1
+instance = comp, \AmayorB~I\, AmayorB, Pract2, 1
+instance = comp, \AigualB~I\, AigualB, Pract2, 1
+instance = comp, \AmenorB~I\, AmenorB, Pract2, 1

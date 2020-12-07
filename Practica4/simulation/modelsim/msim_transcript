@@ -1,0 +1,87 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica4_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Practica4.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Practica4
+# -- Compiling architecture structure of Practica4
+# 
+vcom -reportprogress 300 -work work C:/altera/13.0sp1/SistemasI/Practica4/simulation/modelsim/Practica4.vht
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Practica4_vhd_tst
+# -- Compiling architecture Practica4_arch of Practica4_vhd_tst
+vcom -reportprogress 300 -work work C:/altera/13.0sp1/SistemasI/Practica4/simulation/modelsim/Practica4.vht
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Practica4_vhd_tst
+# -- Compiling architecture Practica4_arch of Practica4_vhd_tst
+vsim +altera -do Practica4_run_msim_gate_vhdl.do -l msim_transcript -gui gate_work.practica4_vhd_tst
+# vsim +altera -do Practica4_run_msim_gate_vhdl.do -l msim_transcript -gui gate_work.practica4_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading gate_work.practica4_vhd_tst(practica4_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading gate_work.practica4(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# do Practica4_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {Practica4.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Practica4
+# -- Compiling architecture structure of Practica4
+# 
+add wave  \
+sim:/practica4_vhd_tst/a \
+sim:/practica4_vhd_tst/a_igual_b \
+sim:/practica4_vhd_tst/a_mayor_b \
+sim:/practica4_vhd_tst/a_menor_b \
+sim:/practica4_vhd_tst/b \
+sim:/practica4_vhd_tst/d_a \
+sim:/practica4_vhd_tst/d_b
+run -all

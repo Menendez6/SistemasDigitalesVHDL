@@ -1,0 +1,219 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\SistemasI\Practica10\simulation\modelsim
+Ebina7seg
+Z1 w1605169819
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\13.0sp1\SistemasI\Practica10\simulation\modelsim
+Z5 8C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd
+Z6 FC:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd
+l0
+L4
+V72zBPDk3BVXe@S[W8FMFn1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1607263723.697000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd|
+Z10 !s107 C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 ndT9gDLTBc2lWlTiCUfR;0
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 8 bina7seg 0 22 72zBPDk3BVXe@S[W8FMFn1
+l13
+L11
+VYE@NI:i@mL4OjjNIDSfi51
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 3A6jilSJi0B_X<?;MQOGf0
+!i10b 1
+Econtrolaparcamiento
+Z13 w1607263504
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd
+Z16 FC:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd
+l0
+L5
+VMBlO>8kk0a[doQTU0VjVP2
+R7
+31
+Z17 !s108 1607263723.343000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd|
+Z19 !s107 C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd|
+R11
+R12
+!s100 0bOg<Y`7BPS:W0aU1g>NK0
+!i10b 1
+Abehavioral
+R14
+R2
+R3
+DEx4 work 19 controlaparcamiento 0 22 MBlO>8kk0a[doQTU0VjVP2
+l30
+L17
+V=7S0QCZlK=3fIT^LQ[`BJ2
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 2]k44]Vm68;_GM4R^iVk`3
+!i10b 1
+Econtrolaparcamiento_vhd_tst
+Z20 w1607194901
+R2
+R3
+R4
+Z21 8C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht
+Z22 FC:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht
+l0
+L3
+Vf[;KYJI9_?f8T8Pl`EA?K0
+!s100 UWSA3HS;Mo3ZL2NhfFE>`0
+R7
+31
+!i10b 1
+Z23 !s108 1607263723.874000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht|
+Z25 !s107 C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht|
+R11
+R12
+Acontrolaparcamiento_arch
+R2
+R3
+DEx4 work 27 controlaparcamiento_vhd_tst 0 22 f[;KYJI9_?f8T8Pl`EA?K0
+l28
+L6
+VD:dL]FYRU0M7QZAji<eng2
+!s100 0F7G:BlQ7GX^`5g5DzCCI3
+R7
+31
+!i10b 1
+R23
+R24
+R25
+R11
+R12
+Edetectorflanco
+Z26 w1607262603
+R2
+R3
+R4
+Z27 8C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd
+Z28 FC:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd
+l0
+L4
+VIbF9k9?0Pce;0lZInZCbZ0
+R7
+31
+Z29 !s108 1607263723.146000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd|
+Z31 !s107 C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd|
+R11
+R12
+!s100 1EW;SbX`^eId2J`?N3h7e3
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 14 detectorflanco 0 22 IbF9k9?0Pce;0lZInZCbZ0
+l17
+L13
+VeRN<3PQX4zifO43bDiBgM1
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 bmYYUMAVn0jS1WfnT57ee3
+!i10b 1
+Edetectorflancosubida
+Z32 w1607263651
+R2
+R3
+R4
+Z33 8C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd
+Z34 FC:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd
+l0
+L4
+VX>ASMlX^HoB1E:O=2km9D0
+R7
+31
+Z35 !s108 1607263723.523000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd|
+Z37 !s107 C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd|
+R11
+R12
+!s100 8]e8hLJSBQ]=2jim0QjTD3
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 20 detectorflancosubida 0 22 X>ASMlX^HoB1E:O=2km9D0
+l17
+L13
+VT@ezVlGBIFN@aJ;zAl9ZS3
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 M``@1=RVA8Iig:YDE@4hL2
+!i10b 1
+Epractica10
+Z38 w1607194189
+R14
+R2
+R3
+R4
+Z39 8C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd
+Z40 FC:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd
+l0
+L5
+VD_OBNcSoC76K08[8^^<G63
+R7
+31
+Z41 !s108 1607263722.948000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd|
+Z43 !s107 C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd|
+R11
+R12
+!s100 T^<nH5NKgX:NC=j;e^YeG3
+!i10b 1
+Astructural
+R14
+R2
+R3
+DEx4 work 10 practica10 0 22 D_OBNcSoC76K08[8^^<G63
+l52
+L19
+Vk^lnUH:35X2d56oZ^TlY[1
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 DLZR9[0ai2P58YJOJRK_71
+!i10b 1

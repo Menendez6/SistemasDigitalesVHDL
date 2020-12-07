@@ -1,0 +1,33 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity BinA7Seg is 
+	port( 
+		E			:in std_logic_vector(3 downto 0);
+		salida	:out std_logic_vector(6 downto 0):
+		--a			:out std_logic;
+		--b			:out std_logic;
+		--c			:out std_logic;
+		--d			:out std_logic;
+		--e			:out std_logic;
+		--f			:out std_logic;
+		--g			:out std_logic;
+	);
+end BinA7Seg;
+
+architecture behavioral of BinA7Seg is
+	signal salidas : std_logic_vector(6 downto 0);
+	signal entradas : std_logic_vector(3 downto 0);
+begin
+	entradas <= E;
+	a <= salidas(0);
+	b <= salidas(1);
+	c <= salidas(2);
+	d <= salidas(3);
+	e <= salidas(4);
+	f <= salidas(5);
+	g <= salidas(6);
+with entradas select
+	salidas <=
+	"0000001" when "0001",
+	"1001111" when
