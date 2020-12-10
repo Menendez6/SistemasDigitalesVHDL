@@ -45,7 +45,7 @@ begin
 		s		=> sale
     );
 
-    process(clk,reset_n)
+    process(reset_n)
     begin
         if reset_n='0' then
             contador <= (others =>'0');

@@ -15,7 +15,7 @@ L4
 V72zBPDk3BVXe@S[W8FMFn1
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1607263723.697000
+Z8 !s108 1607421977.342000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd|
 Z10 !s107 C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd|
 Z11 o-93 -work work -O0
@@ -39,7 +39,7 @@ R12
 !s100 3A6jilSJi0B_X<?;MQOGf0
 !i10b 1
 Econtrolaparcamiento
-Z13 w1607263504
+Z13 w1607421814
 Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
@@ -51,7 +51,7 @@ L5
 VMBlO>8kk0a[doQTU0VjVP2
 R7
 31
-Z17 !s108 1607263723.343000
+Z17 !s108 1607421976.566000
 Z18 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd|
 Z19 !s107 C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd|
 R11
@@ -65,7 +65,7 @@ R3
 DEx4 work 19 controlaparcamiento 0 22 MBlO>8kk0a[doQTU0VjVP2
 l30
 L17
-V=7S0QCZlK=3fIT^LQ[`BJ2
+V:ZheD6j`NOGNXI<iShIK61
 R7
 31
 R17
@@ -73,7 +73,7 @@ R18
 R19
 R11
 R12
-!s100 2]k44]Vm68;_GM4R^iVk`3
+!s100 Q8HAMj3MEnH9SBQZjDomE1
 !i10b 1
 Econtrolaparcamiento_vhd_tst
 Z20 w1607194901
@@ -89,7 +89,7 @@ Vf[;KYJI9_?f8T8Pl`EA?K0
 R7
 31
 !i10b 1
-Z23 !s108 1607263723.874000
+Z23 !s108 1607421977.735000
 Z24 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht|
 Z25 !s107 C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht|
 R11
@@ -110,32 +110,32 @@ R24
 R25
 R11
 R12
-Edetectorflanco
-Z26 w1607262603
+Edetectorflancobajada
+Z26 w1607333449
 R2
 R3
 R4
-Z27 8C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd
-Z28 FC:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd
+Z27 8C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd
+Z28 FC:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd
 l0
 L4
-VIbF9k9?0Pce;0lZInZCbZ0
+VGKcMV8RBiF@V>eN23m6FX3
 R7
 31
-Z29 !s108 1607263723.146000
-Z30 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd|
-Z31 !s107 C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd|
+Z29 !s108 1607421976.227000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd|
+Z31 !s107 C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd|
 R11
 R12
-!s100 1EW;SbX`^eId2J`?N3h7e3
+!s100 9N9T=:>IaOZe1dm9:S5:_0
 !i10b 1
 Abehavioral
 R2
 R3
-DEx4 work 14 detectorflanco 0 22 IbF9k9?0Pce;0lZInZCbZ0
+DEx4 work 20 detectorflancobajada 0 22 GKcMV8RBiF@V>eN23m6FX3
 l17
 L13
-VeRN<3PQX4zifO43bDiBgM1
+VcN`ZUN7daFYUKeKQD6TjV2
 R7
 31
 R29
@@ -143,7 +143,7 @@ R30
 R31
 R11
 R12
-!s100 bmYYUMAVn0jS1WfnT57ee3
+!s100 l<anaC7ENIRRl;7c6NO[g2
 !i10b 1
 Edetectorflancosubida
 Z32 w1607263651
@@ -157,7 +157,7 @@ L4
 VX>ASMlX^HoB1E:O=2km9D0
 R7
 31
-Z35 !s108 1607263723.523000
+Z35 !s108 1607421976.953000
 Z36 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd|
 Z37 !s107 C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd|
 R11
@@ -181,7 +181,7 @@ R12
 !s100 M``@1=RVA8Iig:YDE@4hL2
 !i10b 1
 Epractica10
-Z38 w1607194189
+Z38 w1607333480
 R14
 R2
 R3
@@ -193,7 +193,7 @@ L5
 VD_OBNcSoC76K08[8^^<G63
 R7
 31
-Z41 !s108 1607263722.948000
+Z41 !s108 1607421975.790000
 Z42 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd|
 Z43 !s107 C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd|
 R11
@@ -207,7 +207,7 @@ R3
 DEx4 work 10 practica10 0 22 D_OBNcSoC76K08[8^^<G63
 l52
 L19
-Vk^lnUH:35X2d56oZ^TlY[1
+VhFSFPh;oe87=1SIZY7b9M1
 R7
 31
 R41
@@ -215,5 +215,5 @@ R42
 R43
 R11
 R12
-!s100 DLZR9[0ai2P58YJOJRK_71
+!s100 HVMK@3]^I_:CQzOcjRZ8M3
 !i10b 1

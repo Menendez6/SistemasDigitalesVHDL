@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica10
-Sun Dec 06 15:07:57 2020
+Wed Dec 09 20:57:45 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -15,8 +15,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i2_DetectorFlanco|estado_act
   9. State Machine - |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i1_DetectorFlanco|estado_act
- 10. State Machine - |Practica10|DetectorFlanco:i2_DetectorFlanco|estado_act
- 11. State Machine - |Practica10|DetectorFlanco:i1_DetectorFlanco|estado_act
+ 10. State Machine - |Practica10|DetectorFlancoBajada:i2_DetectorFlanco|estado_act
+ 11. State Machine - |Practica10|DetectorFlancoBajada:i1_DetectorFlanco|estado_act
  12. Registers Removed During Synthesis
  13. General Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
@@ -47,7 +47,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 06 15:07:57 2020           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 09 20:57:45 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Practica10                                      ;
 ; Top-level Entity Name              ; Practica10                                      ;
@@ -166,7 +166,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                    ; Library ;
 +----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------+---------+
 ; practica10.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd           ;         ;
-; detectorflanco.vhd               ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd       ;         ;
+; detectorflancobajada.vhd         ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd ;         ;
 ; controlaparcamiento.vhd          ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd  ;         ;
 ; detectorflancosubida.vhd         ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd ;         ;
 ; bina7seg.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd             ;         ;
@@ -214,8 +214,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |ControlAparcamiento:i_ControlAparcamiento| ; 29 (27)           ; 12 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|ControlAparcamiento:i_ControlAparcamiento                                        ; work         ;
 ;       |DetectorFlancoSubida:i1_DetectorFlanco| ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i1_DetectorFlanco ; work         ;
 ;       |DetectorFlancoSubida:i2_DetectorFlanco| ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i2_DetectorFlanco ; work         ;
-;    |DetectorFlanco:i1_DetectorFlanco|          ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|DetectorFlanco:i1_DetectorFlanco                                                 ; work         ;
-;    |DetectorFlanco:i2_DetectorFlanco|          ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|DetectorFlanco:i2_DetectorFlanco                                                 ; work         ;
+;    |DetectorFlancoBajada:i1_DetectorFlanco|    ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|DetectorFlancoBajada:i1_DetectorFlanco                                           ; work         ;
+;    |DetectorFlancoBajada:i2_DetectorFlanco|    ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Practica10|DetectorFlancoBajada:i2_DetectorFlanco                                           ; work         ;
 +------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -245,27 +245,27 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------+
-; State Machine - |Practica10|DetectorFlanco:i2_DetectorFlanco|estado_act ;
-+------------------+-----------------+------------------+-----------------+
-; Name             ; estado_act.Esp1 ; estado_act.Pulso ; estado_act.Esp0 ;
-+------------------+-----------------+------------------+-----------------+
-; estado_act.Esp0  ; 0               ; 0                ; 0               ;
-; estado_act.Pulso ; 0               ; 1                ; 1               ;
-; estado_act.Esp1  ; 1               ; 0                ; 1               ;
-+------------------+-----------------+------------------+-----------------+
++-------------------------------------------------------------------------------+
+; State Machine - |Practica10|DetectorFlancoBajada:i2_DetectorFlanco|estado_act ;
++------------------+-----------------+------------------+-----------------------+
+; Name             ; estado_act.Esp1 ; estado_act.Pulso ; estado_act.Esp0       ;
++------------------+-----------------+------------------+-----------------------+
+; estado_act.Esp0  ; 0               ; 0                ; 0                     ;
+; estado_act.Pulso ; 0               ; 1                ; 1                     ;
+; estado_act.Esp1  ; 1               ; 0                ; 1                     ;
++------------------+-----------------+------------------+-----------------------+
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------+
-; State Machine - |Practica10|DetectorFlanco:i1_DetectorFlanco|estado_act ;
-+------------------+-----------------+------------------+-----------------+
-; Name             ; estado_act.Esp1 ; estado_act.Pulso ; estado_act.Esp0 ;
-+------------------+-----------------+------------------+-----------------+
-; estado_act.Esp0  ; 0               ; 0                ; 0               ;
-; estado_act.Pulso ; 0               ; 1                ; 1               ;
-; estado_act.Esp1  ; 1               ; 0                ; 1               ;
-+------------------+-----------------+------------------+-----------------+
++-------------------------------------------------------------------------------+
+; State Machine - |Practica10|DetectorFlancoBajada:i1_DetectorFlanco|estado_act ;
++------------------+-----------------+------------------+-----------------------+
+; Name             ; estado_act.Esp1 ; estado_act.Pulso ; estado_act.Esp0       ;
++------------------+-----------------+------------------+-----------------------+
+; estado_act.Esp0  ; 0               ; 0                ; 0                     ;
+; estado_act.Pulso ; 0               ; 1                ; 1                     ;
+; estado_act.Esp1  ; 1               ; 0                ; 1                     ;
++------------------+-----------------+------------------+-----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -275,8 +275,8 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------+--------------------+
 ; ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i2_DetectorFlanco|estado_act.Esp0 ; Lost fanout        ;
 ; ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i1_DetectorFlanco|estado_act.Esp0 ; Lost fanout        ;
-; DetectorFlanco:i2_DetectorFlanco|estado_act.Esp1                                                 ; Lost fanout        ;
-; DetectorFlanco:i1_DetectorFlanco|estado_act.Esp1                                                 ; Lost fanout        ;
+; DetectorFlancoBajada:i2_DetectorFlanco|estado_act.Esp1                                           ; Lost fanout        ;
+; DetectorFlancoBajada:i1_DetectorFlanco|estado_act.Esp1                                           ; Lost fanout        ;
 ; Total Number of Removed Registers = 4                                                            ;                    ;
 +--------------------------------------------------------------------------------------------------+--------------------+
 
@@ -302,8 +302,8 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------+
 ; 6:1                ; 8 bits    ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |Practica10|ControlAparcamiento:i_ControlAparcamiento|contador[7]                                      ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|DetectorFlanco:i2_DetectorFlanco|Selector0                                                 ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|DetectorFlanco:i1_DetectorFlanco|Selector0                                                 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|DetectorFlancoBajada:i2_DetectorFlanco|Selector0                                           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|DetectorFlancoBajada:i1_DetectorFlanco|Selector0                                           ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i2_DetectorFlanco|Selector2 ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Practica10|ControlAparcamiento:i_ControlAparcamiento|DetectorFlancoSubida:i1_DetectorFlanco|Selector2 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------+
@@ -324,21 +324,22 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Dec 06 15:07:53 2020
+    Info: Processing started: Wed Dec 09 20:57:42 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica10 -c Practica10
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file practica10.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Practica10-structural
     Info (12023): Found entity 1: Practica10
 Info (12127): Elaborating entity "Practica10" for the top level hierarchy
-Warning (12125): Using design file detectorflanco.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: DetectorFlanco-behavioral
-    Info (12023): Found entity 1: DetectorFlanco
-Info (12128): Elaborating entity "DetectorFlanco" for hierarchy "DetectorFlanco:i1_DetectorFlanco"
+Warning (12125): Using design file detectorflancobajada.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: DetectorFlancoBajada-behavioral
+    Info (12023): Found entity 1: DetectorFlancoBajada
+Info (12128): Elaborating entity "DetectorFlancoBajada" for hierarchy "DetectorFlancoBajada:i1_DetectorFlanco"
 Warning (12125): Using design file controlaparcamiento.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: ControlAparcamiento-behavioral
     Info (12023): Found entity 1: ControlAparcamiento
 Info (12128): Elaborating entity "ControlAparcamiento" for hierarchy "ControlAparcamiento:i_ControlAparcamiento"
+Warning (10492): VHDL Process Statement warning at controlaparcamiento.vhd(53): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (12125): Using design file detectorflancosubida.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: DetectorFlancoSubida-behavioral
     Info (12023): Found entity 1: DetectorFlancoSubida
@@ -354,10 +355,10 @@ Info (21057): Implemented 77 device resources after synthesis - the final resour
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 49 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Sun Dec 06 15:07:57 2020
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4652 megabytes
+    Info: Processing ended: Wed Dec 09 20:57:45 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

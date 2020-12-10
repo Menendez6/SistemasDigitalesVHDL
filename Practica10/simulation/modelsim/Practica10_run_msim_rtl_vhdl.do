@@ -6,7 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/practica10.vhd}
-vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd}
+vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd}
 vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd}
 vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflancosubida.vhd}
 vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/bina7seg.vhd}

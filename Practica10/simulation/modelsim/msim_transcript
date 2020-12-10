@@ -18,13 +18,13 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Practica10
 # -- Compiling architecture structural of Practica10
-# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflanco.vhd}
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/detectorflancobajada.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity DetectorFlanco
-# -- Compiling architecture behavioral of DetectorFlanco
+# -- Compiling entity DetectorFlancoBajada
+# -- Compiling architecture behavioral of DetectorFlancoBajada
 # vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica10/controlaparcamiento.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -76,12 +76,18 @@
 #    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /controlaparcamiento_vhd_tst/i1
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 1  Instance: /controlaparcamiento_vhd_tst/i1
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 1  Instance: /controlaparcamiento_vhd_tst/i1
-# ** Failure: Fin de la simulacion
-#    Time: 14760 ns  Iteration: 0  Process: /controlaparcamiento_vhd_tst/always File: C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht
-# Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 83
-# Simulation Breakpoint: Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 83
+# ** Failure: Error el contador no satura
+#    Time: 10160 ns  Iteration: 0  Process: /controlaparcamiento_vhd_tst/always File: C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht
+# Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 63
+# Simulation Breakpoint: Break in Process always at C:/altera/13.0sp1/SistemasI/Practica10/simulation/modelsim/ControlAparcamiento.vht line 63
 # MACRO ./Practica10_run_msim_rtl_vhdl.do PAUSED at line 21
