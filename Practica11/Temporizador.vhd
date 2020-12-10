@@ -21,7 +21,7 @@ end Temporizador;
 
 architecture structural of Temporizador is
     signal cnt_seg, cnt_min : std_logic_vector (6 downto 0);
-    signal enable : std_logic (3 downto 0);
+    signal enable : std_logic_vector(3 downto 0);
     signal d_min, d_seg     : std_logic_vector(3 downto 0);
 
     component Contadormod50M

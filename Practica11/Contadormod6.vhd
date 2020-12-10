@@ -16,30 +16,32 @@ end Contadormod6;
 
 architecture behavioral of Contadormod6 is
     signal contador : unsigned(2 downto 0);
-    signal maximo   : std_logic_vector(2 downto 0);
-    signal a        : std_logic;
+    --signal maximo   : std_logic_vector(2 downto 0);
+    --signal a        : std_logic;
 begin
-    a <= carga or a;
-    maximo <= e_p when a='1' and e_p < "110" else "0000";
+    --a <= carga or a;
+    --maximo <= e_p when a='1' and e_p < "110" else "000";
 
     process(reset_n,clk)
     begin
         if reset_n = '0' then
             contador <= (others => '0');
-            a <= '0';
+            --a <= '0';
         else
             if rising_edge(clk) then
-                if en='1' and a='1' then
-                    if contador= "000" then
-                        contador <= unsigned(maximo);
-                    else
-                        contador <=contador-1;
-                    end if;
-                end if;
-            end if; 
+					if carga='1' and e_p < "110" then
+						contador <= unsigned(e_p);
+					elsif en='1' then
+						 if contador= "000" then
+								contador <= unsigned(e_p);
+						 else
+								contador <=contador-1;
+						 end if;
+					end if; 
+				end if;
         end if;
     end process;
 
     s <= std_logic_vector(contador);
-    co<= '1' when contador ="0000" and en='1' else '0';
+    co<= '1' when contador ="000" and en='1' else '0';
 end behavioral;
