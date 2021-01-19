@@ -62,7 +62,7 @@ begin
 	if reset_n='0' then
 		estado_act <=Esp0;
 	else
-		if falling_edge(clk) then
+		if rising_edge(clk) then
 			estado_act <= estado_sig;
 		end if;
 	end if;

@@ -16,27 +16,23 @@ end Contadormod10;
 
 architecture behavioral of Contadormod10 is
     signal contador : unsigned(3 downto 0);
-    --signal maximo   : std_logic_vector(3 downto 0);
-    --signal a        : std_logic;
 
 begin
-    --a <= carga or a;
-    --maximo <= e_p when a='1' and e_p < "1010" else "0000";
 
     process(reset_n,clk)
     begin
         if reset_n = '0' then
             contador <= (others => '0');
-            --a<= '0';
+
         else
             if rising_edge(clk) then
 					if carga='1' and e_p < "1010" then
 						contador <= unsigned(e_p);
 					elsif en='1' then
 						  if contador= "0000" then
-								contador <= unsigned(e_p);
+								contador <= "1001";
 						  else
-								contador <=contador-1; --Carles maricon
+								contador <=contador-1; 
 						  end if;
 					end if;
             end if; 

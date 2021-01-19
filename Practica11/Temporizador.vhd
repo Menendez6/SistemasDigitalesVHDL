@@ -115,8 +115,10 @@ begin
         clk     => clk,
         en      => enable(0),
         s       => cnt_min(6 downto 4),
-        co      => fin_cuenta
+        co      => open
     );
+
+    fin_cuenta <= '1' when cnt_min="0000000" and cnt_seg="0000000" else '0';
 
     d_min<='0' & cnt_min(6 downto 4);
     d_seg<='0' & cnt_seg(6 downto 4);

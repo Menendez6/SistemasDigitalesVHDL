@@ -21,7 +21,7 @@ architecture behavioral of UnidadControl is
 
     signal boton: std_logic;
 
-    type t_estados is (Reposo,Minutos, Segundos, Parado, Encendido,Fin);
+    type t_estados is (Reposo,Minutos, Segundos, Encendido,Parado,Final);
     signal estado_act, estado_sig : t_estados;
 
     component DetectorFlancoBajada
@@ -59,33 +59,21 @@ begin
       when Reposo =>
         if boton = '1' then
           estado_sig <= Minutos;
-        --elsif puerta = '1' then
-          --estado_sig <= Abierta;
         end if;
       when Minutos =>
         if boton = '1' then
           estado_sig <= Segundos;
-        --elsif puerta = '1' then
-          --estado_sig <= Abierta;
         end if;
       when Segundos =>
-        if boton ='1' then
-          estado_sig <= Encendido;
-        --elsif puerta = '1' then
-          --estado_sig <= Abierta;
-        end if;
-      --when Abierta =>
-        --if puerta = '0' then
-          --estado_sig <= Reposo;
-       -- end if;
+        estado_sig <= Encendido;
       when Encendido => 
         if puerta = '1' then
           estado_sig <= Parado;
         elsif fin_cuenta = '1' then
-          estado_sig <= Fin;
+          estado_sig <= Final;
         end if;
       when Parado =>
-        if puerta = '1' then
+        if puerta = '0' then
           estado_sig <= Encendido;
         end if;
       when Fin =>
@@ -97,11 +85,11 @@ begin
     end case;
   end process TransicionEstados;
 
-  abierta <= '1' when puerta = '1' else '0';
 
   Salidas : process(estado_act)
   begin
 
+    abierta 	 <= '1' when puerta = '1' else '0';
     en_cnt      <= '0';
     carga_min   <= '0';
     carga_seg   <= '0';
@@ -116,14 +104,12 @@ begin
         carga_min <='1';
       when Segundos =>
         carga_seg <='1';
-      when Abierta =>
-        abierta <='1';
       when Encendido =>
         horno_on <= '1';
         en_cnt <= '1';
       when Parado =>
-        abierta <= '1';
-      when Fin =>
+        null;
+      when Final =>
         fin <= '1';
     end case;
   end process Salidas;
