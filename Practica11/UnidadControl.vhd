@@ -35,7 +35,7 @@ architecture behavioral of UnidadControl is
 
 begin
 
-  i1_Flanco: DetectorFlancoBajada
+  i1_Flanco: DetectorFlancobajada
   port map(
     e		    => p1,
     reset_n	=> reset_n,
@@ -76,7 +76,7 @@ begin
         if puerta = '0' then
           estado_sig <= Encendido;
         end if;
-      when Fin =>
+      when Final =>
         if puerta = '1' then
           estado_sig <= Reposo;
         end if;
@@ -89,7 +89,7 @@ begin
   Salidas : process(estado_act)
   begin
 
-    abierta 	 <= '1' when puerta = '1' else '0';
+    abierta 	 <= '0';
     en_cnt      <= '0';
     carga_min   <= '0';
     carga_seg   <= '0';
@@ -112,6 +112,10 @@ begin
       when Final =>
         fin <= '1';
     end case;
+    if puerta = '1' then
+      abierta <= '1';
+    end if;
+    
   end process Salidas;
 
 end behavioral;   
